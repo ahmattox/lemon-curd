@@ -15,12 +15,14 @@ gem 'uglifier', '>= 1.3.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-gem 'heroku_deploy', path: '~/Repositories/heroku_deploy/'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'pry-byebug'
+  if ENV['HEROKU_DEPLOY_GEM'] == 'true'
+    gem 'heroku_deploy', path: '~/Repositories/heroku_deploy/'
+  end
 end
 
 group :development do
