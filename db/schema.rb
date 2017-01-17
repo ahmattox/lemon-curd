@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170117213642) do
+ActiveRecord::Schema.define(version: 20170117214742) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "lemons", force: :cascade do |t|
-    t.string "nickname"
+    t.string  "nickname"
+    t.integer "quality"
   end
 
 end
