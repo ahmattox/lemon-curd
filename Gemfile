@@ -21,7 +21,7 @@ gem 'jquery-rails'
 group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry-byebug'
-  gem 'heroku_deploy', git: 'git@github.com:friendsoftheweb/heroku_deploy.git'
+  gem 'heroku_deploy', git: 'https://github.com/friendsoftheweb/heroku_deploy.git'
 end
 
 group :development do
