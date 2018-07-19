@@ -1,0 +1,14 @@
+{
+  "name": "lemon-curd",
+  "scripts": {
+    "postdeploy": "bin/rails db:migrate"
+  },
+  "env": {},
+  "formation": {},
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
